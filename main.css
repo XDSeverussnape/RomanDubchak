@@ -328,7 +328,6 @@ img {
     display: block;
     width: 100px;
     height: 500px;
-    background-color: chocolate;
     transition: 1s ease;
 }
 
@@ -340,9 +339,93 @@ img {
     position: relative;
     display: block;
     top: 25%;
-    width: 50px;
-    height: 200px;
-    background-color: rgb(43, 78, 9);
+    width: 100px;
+    height: 100px;
     cursor: pointer;
     transition: 1s ease;
+
+}
+
+
+.social__button > ul{
+  display:flex;
+  flex-direction:row;
+  justify-items:center;
+}
+.social__button > ul > li{
+  position:static;
+  border:2px solid #2980B9;
+  list-style:none;
+  margin:10px;
+  padding:10px;
+  border-radius:50px;
+  display:flex;
+}
+#left{
+  align-self:center;
+}
+
+#left{
+  flex-direction:row-reverse;
+  padding: 30px 10px 30px 60px;
+}
+
+
+
+.leh{
+  width:20px;
+  height:20px;
+  position:relative;
+  box-shadow: -15px 15px #3498DB;
+  transform: rotate(45deg);
+  border-radius:5px;
+}
+
+.m1 {
+  animation: ani3 1.0s steps(5, start) infinite;
+  -webkit-animation: ani3 1.0s steps(5, start) infinite;
+}
+.m2 {
+  animation: ani2 1.0s steps(5, start) infinite;
+  -webkit-animation: ani2 1.0s steps(5, start) infinite;
+}
+.m3 {
+  animation: ani1 1.0s steps(5, start) infinite;
+  -webkit-animation: ani1 1.0s steps(5, start) infinite;
+}
+@keyframes ani1 {
+   0% {opacity:0.1;}
+  11% {opacity:0.1;}
+  22% {opacity:0.1;}
+  33% {opacity:0.15;}
+  44% {opacity:0.25;}
+  55% {opacity:0.5;}
+  66% {opacity:1;}
+  77% {opacity:0.5;}
+  88% {opacity:0.25;}
+  100% {opacity:0.15;}
+}
+@keyframes ani2 {
+   0% {opacity:0.1;}
+  11% {opacity:0.15;}
+  22% {opacity:0.25;}
+  33% {opacity:0.5;}
+  44% {opacity:1;}
+  55% {opacity:0.5;}
+  66% {opacity:0.25;}
+  77% {opacity:0.15;}
+  88% {opacity:0.1;}
+  100% {opacity:0.1;}
+}
+@keyframes ani3 {
+   0% {opacity:0.25;}
+  11% {opacity:0.5;}
+  22% {opacity:1;}
+  33% {opacity:0.5;}
+  44% {opacity:0.25;}
+  55% {opacity:0.15;}
+  66% {opacity:0.1;}
+  77% {opacity:0.1;}
+  88% {opacity:0.1;}
+  100% {opacity:0.15;}
 }
