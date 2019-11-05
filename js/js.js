@@ -158,6 +158,7 @@ window.addEventListener("DOMContentLoaded", function() {
     newPage = document.querySelector(".conteiner-top");
   seeMore.addEventListener("click", function() {
     newPage.classList.add("fade");
+    seeMore.classList.add("hide");
     newPage.style.zIndex = "20";
   });
 
@@ -166,5 +167,18 @@ window.addEventListener("DOMContentLoaded", function() {
   cameBack.addEventListener("click", function() {
     oldPage.style.zIndex = "-10";
     newPage.classList.remove("fade");
+    seeMore.classList.remove("hide");
+  });
+
+   const socialButton = document.querySelector(".social__button"),
+    socialMenu = document.querySelector(".social__menu");
+  socialButton.addEventListener("click", function() {
+    if (socialMenu.classList.contains("social__menu-right")) {
+      socialMenu.classList.remove("social__menu-right");
+      socialButton.classList.remove("social__menu-right");
+    }else {
+      socialMenu.classList.add("social__menu-right");
+      socialButton.classList.add("social__menu-right");
+    }
   });
 });
